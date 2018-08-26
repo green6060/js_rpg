@@ -5,5 +5,12 @@ body
 
 .rpgui-container {
   height:540px;
-  width:100%;
+  width: 100%
+}
+
+
+#flex-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
 }
