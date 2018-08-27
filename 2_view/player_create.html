@@ -23,20 +23,68 @@
 
         <p>Welcome to RPG</p>
         <p>Before we begin, you've got some choices to make. Choose wisely...</p>
-
+        <hr />
         <form action="">
-          <label>Your hero's name:</label>
-          <input type="text" name="firstName" value="Bob" placeholder="Hero name">
-    
-          <label>Your hero's title':</label>
-          <input type="text" name="title" value="The Destroyer" placeholder="Hero Title">
+          <div class="flex">
+            <div class="heroBox">
+              <label>Your hero's name:</label>
+              <input type="text" name="firstName" value="Bob" placeholder="Hero name">
+              <label>Your hero's title':</label>
+              <input type="text" name="title" value="The Destroyer" placeholder="Hero Title">
+            </div>
+            <div class="heroBox">
+              <label>Hero's gender:</label>
+              <br />
+              <input class="rpgui-radio" checked type="radio" name="sex" value="male"><label>Male</label>
+              <br />
+              <input class="rpgui-radio" type="radio" name="sex" value="female"><label>Female</label>
+            </div>
+          </div>
           <br /><br />
-          
-          <label>Hero's gender:</label>
-          <br />
-          <input class="rpgui-radio" checked type="radio" name="sex" value="male"><label>Male</label>
-          <br />
-          <input class="rpgui-radio" type="radio" name="sex" value="female"><label>Female</label>
+          <hr />
+          <div class="flex">
+            <div class="heroBox">
+              <label>Select your class:</label>
+              <select class="rpgui-dropdown" id="playerClass">
+                  <option value="Warrior">Warrior</option>
+                  <option value="Mage">Mage</option>
+                  <option value="Rogue">Rogue</option>
+                  <option value="Ranger">Ranger</option>
+              </select>
+              <br />
+              <label>Select race:</label>
+              <select class="rpgui-dropdown" id="playerRace">
+                  <option value="Human">Human</option>
+                  <option value="Orc">Orc</option>
+                  <option value="Elf">Elf</option>
+                  <option value="Dwarf">Dwarf</option>
+              </select>
+              <br />
+              <label>Select deity (optional):</label>
+              <select class="rpgui-dropdown" id="playerDiety">
+                <option selected disabled hidden value=''></option>
+                <option value="Boccob">Boccob</option>
+                <option value="Moradin">Moradin</option>
+                <option value="Nerull">Nerull</option>
+                <option value="Pelor">Pelor</option>
+                <option value="Yondalla">Yondalla</option>
+              </select>
+            </div>
+            <div class="heroBox">
+              <label>Profession / Background:</label>
+              <select class="rpgui-list" id="background-select" size="6">
+                  <option value="Blacksmith">Blacksmith</option>
+                  <option value="Merchant">Merchant</option>
+                  <option value="City Guard">City Guard</option>
+                  <option value="Alchemist">Alchemist</option>
+                  <option value="Explorer">Explorer</option>
+                  <option value="Thug">Thug</option>
+                  <option value="Mercenary">Mercenary</option>
+                  <option value="Royalty">Royalty</option>
+                  <option value="Gladiator">Gladiator</option>
+              </select>
+            </div>
+          </div>
         </form>
 
         <button class="rpgui-button golden" id="playerCreateBtn" type="button"><p>Begin Adventure</p></button>
