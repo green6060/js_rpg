@@ -20,6 +20,11 @@ body
   justify-content: center;
 }
 
+.flexible{
+  display: flex;
+  flex-direction: column;
+}
+
 .heroBox {
   width: 50%
 }

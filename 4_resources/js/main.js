@@ -5,6 +5,6 @@ $("#playerCreateBtn").click(function(){
   var playerClass= $( "#playerClass option:selected").val();
   var playerRace = $( "#playerRace option:selected").val();
   var playerDiety = $( "#playerDiety option:selected").val();
+  var playerProfession = $( "#background-select option:selected").val();
   debugger;
-
 });
